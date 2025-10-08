@@ -15,10 +15,30 @@
     <h1 class="titulo">Escolha um item</h1>
     <p class="descricao">Amigos e familiares podem escolher um dos itens abaixo para presentear com PIX.</p>
 
-    <section class="lista-itens" id="lista-itens">
+    <section class="lista-itens" id="lista-itens"></section>
 
-           
-    </section>
+    <!-- Modal PIX -->
+<div id="pixModal" class="modal">
+  <div class="modal-content">
+    <span class="close">&times;</span>
+
+    <h2 id="pixItemNome"></h2>
+    <p><strong>Valor:</strong> R$ <span id="pixValor"></span></p>
+    <p><strong>Chave PIX:</strong></p>
+
+    <div class="pix-chave-container">
+      <input type="text" id="pixChave" value="SUA_CHAVE_ALEATORIA_AQUI" readonly>
+      <button id="copiarPix">Copiar</button>
+    </div>
+
+    <p class="pix-instrucoes">
+      Envie o PIX para a chave acima e, após o pagamento, confirme com os noivos.
+    </p>
+
+    <button id="confirmarPresente">Confirmar que enviei o PIX</button>
+  </div>
+</div>
+
     <script src="./script/getDados.js" type="module"></script>
 </body>
 </html>

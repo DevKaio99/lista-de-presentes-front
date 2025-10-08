@@ -46,27 +46,50 @@ function exibirItens(itens) {
   });
 }
 
-async function presentear(item) {
-  const nome = prompt(`Digite seu nome completo para registrar o presente do item: ${item.nome}`);
-  if (!nome) return alert("Por favor, informe o nome.");
+function presentear(item) {
+  const nomePresenteador = prompt("Digite seu nome completo:");
+  if (!nomePresenteador) return;
 
-  try {
-    const response = await fetch(`${API_URL}/presentear/${item.id}`, {
-      method: "POST",
-      headers: { "Content-Type": "application/json" },
-      body: JSON.stringify({ nomePresenteador: nome })
-    });
+  // Mostra o modal com os dados do item
+  const modal = document.getElementById("pixModal");
+  document.getElementById("pixItemNome").textContent = item.nome;
+  document.getElementById("pixValor").textContent = item.preco;
+  modal.style.display = "block";
 
-    if (!response.ok) throw new Error("Erro ao registrar o presente");
+  // Evento do botão Copiar
+  document.getElementById("copiarPix").onclick = function () {
+    const chaveInput = document.getElementById("pixChave");
+    chaveInput.select();
+    document.execCommand("copy");
+    alert("Chave PIX copiada!");
+  };
 
-    const resultado = await response.json();
-    alert(`Presente registrado com sucesso por ${resultado.nomePresenteador}!`);
+  // Evento Confirmar
+  document.getElementById("confirmarPresente").onclick = async function () {
+    try {
+      await fetch("http://localhost:8080/presentes", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({
+          nomePresenteador,
+          itemId: item.id
+        })
+      });
+      alert("Presente registrado! Obrigado!");
+      modal.style.display = "none";
+    } catch (err) {
+      console.error(err);
+      alert("Erro ao registrar presente.");
+    }
+  };
 
-  } catch (erro) {
-    console.error("Erro:", erro);
-    alert("Ocorreu um erro ao tentar registrar o presente.");
-  }
+  // Fecha o modal
+  document.querySelector(".close").onclick = () => modal.style.display = "none";
+  window.onclick = (event) => {
+    if (event.target === modal) modal.style.display = "none";
+  };
 }
+
 // Atualiza o item na tela (sem recarregar tudo)
 function atualizarItemNaTela(itemAtualizado) {
   const itemDiv = document.querySelector(`.item[data-id="${itemAtualizado.id}"]`);
