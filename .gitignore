@@ -1,0 +1,188 @@
+<ul class="lista">
+            <li class="item">
+                <a href="#"><img class="card__imagem" src="img/cooktop.jpg"></a>
+                <a href="#" class="card__descricao">Fogão Cooktop 5 Bocas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: 1</p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+            <li class="item">
+                <a href="#"><img class="card__imagem" src="img/teste_faca.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+            <li class="item">
+                <a href="#"><img class="card__imagem" src="img/teste_faca.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>            
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+                        <li class="item">
+                <a href="#"><img class="card__imagem" src="img/jogo-de-facas.jpg"></a>
+                <a href="#" class="card__descricao">Jogo de Facas</a>
+                <p class="lista__item__valor">R$ 550</p>
+                <p class="lista__item__qtd">Quantidade disponível: </p2>
+                <button class="botao-presentear">Presentear item</button>
+            </li>
+
+
+
+
+            CSS
+
+            .titulo {
+    font-size: 40px;
+    text-align: center;
+    margin: 2em 0 .5em 0;
+    color: var(--cor-principal);
+}
+
+.lista__item__valor {
+    margin: .5em 0;
+}
+
+.descricao {
+    font-size: 16px;
+    text-align: center;
+    color: var(--cor-secundaria);
+}
+
+.lista__item__qtd {
+    font-size: 11px;
+    text-align: left;
+}
+
+.card__imagem {
+    width: 80%;
+    margin: .3em 0;
+}
+
+.lista {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* 2 colunas de largura igual */
+    grid-template-rows: repeat(10, auto); /* 10 linhas automáticas */
+    gap: 5px; /* espaço entre os itens */
+    list-style: none;
+    padding: 1em;
+    align-items: center;
+}
+
+.item {
+    background-color: white;
+    border: 2px solid #E0E0E0;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1em;
+    width: 130px;     /* largura fixa */
+    height: 200px;    /* altura fixa */
+    object-fit: cover; /* faz a imagem preencher o espaço sem distorcer */
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card__descricao {
+    text-decoration: none;
+}
+
+.botao-presentear {
+  padding: 8px 16px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-top: 1EM;
+}
+
+.botao-presentear:disabled {
+  background-color: #ccc;
+  cursor: not-allowed;
+}

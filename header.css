@@ -1,0 +1,20 @@
+.menu {
+    background-color: #0A2540;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    align-items: center;
+}
+
+.link {
+    text-decoration: none;
+    color: var(--branco);
+}
+
+.link__pix {
+    text-decoration: none;
+    color: var(--branco);
+    background-color: #2D9CDB;
+    border-radius: 5px;
+    padding: .5em;
+}
