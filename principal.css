@@ -61,7 +61,7 @@ button {
 }
 
 .modal {
-  display: none; /* escondido por padrão */
+  display: none;
   position: fixed;
   z-index: 1000;
   left: 0;
