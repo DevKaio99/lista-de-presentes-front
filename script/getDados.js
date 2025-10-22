@@ -1,7 +1,7 @@
-// Endereço do seu backend Spring Boot
+// Endereço backend
 const API_URL = "http://localhost:8080/itens";
 
-// Seleciona o container onde os itens serão renderizados
+// Seleciona o container onde os itens serão exibidos
 const listaContainer = document.getElementById("lista-itens");
 
 // Função para carregar os itens do backend
@@ -33,8 +33,8 @@ function exibirItens(itens) {
       <img src="${item.foto}" alt="${item.nome}">
       <h3>${item.nome}</h3>
 
-      <p><strong>Quantidade disponível:</strong> ${item.quantidade}</p>
-      <p>Valor: ${item.preco} R$</p>
+      <p><strong>Quantidade disponível:</strong> <span class="qtd">${item.quantidade}</span></p>
+      <p>Valor: R$ ${item.preco},00</p>
       <button ${item.quantidade <= 0 ? "disabled" : ""}>Presentear</button>
     `;
 
@@ -46,6 +46,31 @@ function exibirItens(itens) {
   });
 }
 
+
+// Abre o modal do botão Enviar Pix
+const botaoPix = document.getElementById("botaoPix");
+const modal = document.getElementById("modalEnviarPix");
+botaoPix.addEventListener("click", () => {
+  modal.style.display = "block";
+});
+
+// Evento do botão Copiar
+document.getElementById("copiarPix").onclick = function () {
+  const chaveInput = document.getElementById("pixChave");
+  chaveInput.select();
+  document.execCommand("copy");
+  alert("Chave PIX copiada!");
+};
+
+// Fecha o modal
+document.getElementById("fecharPixModal").addEventListener("click", () => {
+  modalEnviarPix.style.display = "none";
+});
+
+
+
+
+// Função presentear
 function presentear(item) {
   const nomePresenteador = prompt("Digite seu nome completo:");
   if (!nomePresenteador) return;
@@ -54,6 +79,7 @@ function presentear(item) {
   const modal = document.getElementById("pixModal");
   document.getElementById("pixItemNome").textContent = item.nome;
   document.getElementById("pixValor").textContent = item.preco;
+  const idSelecionado = item.id;
   modal.style.display = "block";
 
   // Evento do botão Copiar
@@ -66,13 +92,18 @@ function presentear(item) {
 
   // Evento Confirmar
   document.getElementById("confirmarPresente").onclick = async function () {
+    if (!idSelecionado) {
+      alert("Erro: nenhum presente selecionado.");
+      return;
+    }
     try {
-      await fetch("http://localhost:8080/presentes", {
+      await fetch(`http://localhost:8080/itens/presentear/${idSelecionado}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
           nomePresenteador,
           itemId: item.id
+
         })
       });
       alert("Presente registrado! Obrigado!");
@@ -90,17 +121,7 @@ function presentear(item) {
   };
 }
 
-// Atualiza o item na tela (sem recarregar tudo)
-function atualizarItemNaTela(itemAtualizado) {
-  const itemDiv = document.querySelector(`.item[data-id="${itemAtualizado.id}"]`);
-  if (!itemDiv) return;
 
-  // Atualiza a quantidade e botão
-  const qtd = itemDiv.querySelector("p strong");
-  qtd.nextSibling.textContent = ` ${itemAtualizado.quantidade}`;
-  const botao = itemDiv.querySelector("button");
-  if (itemAtualizado.quantidade <= 0) botao.disabled = true;
-}
 
 
 // Chama a função assim que a página carregar

@@ -1,15 +1,20 @@
 .titulo {
-    font-size: 40px;
+  font-family: var(--fonte-titulo);
+    font-size: 60px;
     text-align: center;
     margin: 2em 0 .5em 0;
     color: var(--cor-principal);
 }
 
 .descricao {
-    font-size: 16px;
-    text-align: center;
-    color: var(--cor-secundaria);
+  background-color: var(--branco);
+  text-align: center;
+  padding: 2em;
+  font-size: 16px;
+  text-align: center;
+  color: var(--cor-secundaria);
 }
+
 
  .lista-itens {
     display: flex;
@@ -21,7 +26,7 @@
 
 
 .item {
-    background-color: white;
+    background-color: var(--branco);
     border: 2px solid #E0E0E0;
     border-radius: 10px;
     text-align: center;
@@ -40,14 +45,32 @@
 
 }
 
+h3 {
+  font-weight: 500;
+}
+
+strong {
+  color: gray;
+  font-size: 14px;
+}
+
+span {
+  color: gray;
+  font-size: 14px;
+}
+
+.descricao-texto {
+  font-family: "Josefin Sans", sans-serif;
+  margin: 1em 0;
+}
 
 p {
-    margin: 1em 0;
+  margin: .5em 0;
 }
 
 button {
     margin-top: 10px;
-    background-color: #28a745;
+    background-color: var(--cor-principal);
     color: white;
     border: none;
     padding: 10px 15px;
@@ -151,4 +174,32 @@ button {
   margin-top: 15px;
   font-size: 0.9em;
   color: #444;
+}
+
+
+@media screen and (min-width: 1024px){
+  .titulo {
+    font-size: 75px;
+    margin-bottom: 1em;
+  }
+
+  .descricao {
+  font-size: 20px;
+}
+
+}
+
+@media screen and (min-width: 1728px) {
+    .titulo {
+    font-size: 75px;
+    margin-bottom: 1em;
+  }
+
+  .descricao {
+  font-size: 18px;
+}
+
+.lista-itens {
+  padding: 0 10em;
+}
 }

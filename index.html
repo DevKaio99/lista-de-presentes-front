@@ -1,46 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Lista de Presentes Kaio & Thai</title>
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lista de Presentes Kaio & Thai</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-    <header class="menu">
-        <a class="link" href="#">Início</a>
-        <a class="link__pix" href="#">Enviar PIX</a>
-    </header>
+  <header class="menu">
+    <a class="link" href="#">Início</a>
+    <button class="link__pix" id="botaoPix">Enviar PIX</button>
 
-    <h1 class="titulo">Escolha um item</h1>
-    <p class="descricao">Amigos e familiares podem escolher um dos itens abaixo para presentear com PIX.</p>
+    <!--MODAL DO BOTÃO ENVIAR PIX-->
+    <div id="modalEnviarPix" class="modal" style="display: none;">
+      <div class="modal-content">
+      <h2>Enviar Pix</h2>
 
-    <section class="lista-itens" id="lista-itens"></section>
+      <div class="pix-chave-container">
+        <input type="text" id="pixChave" value="8b39cd86-9019-46ac-ab52-5cca6a6169e7" readonly>
+        <button id="copiarPix">Copiar</button>
+      </div>
 
-    <!-- Modal PIX -->
-<div id="pixModal" class="modal">
-  <div class="modal-content">
-    <span class="close">&times;</span>
-
-    <h2 id="pixItemNome"></h2>
-    <p><strong>Valor:</strong> R$ <span id="pixValor"></span></p>
-    <p><strong>Chave PIX:</strong></p>
-
-    <div class="pix-chave-container">
-      <input type="text" id="pixChave" value="SUA_CHAVE_ALEATORIA_AQUI" readonly>
-      <button id="copiarPix">Copiar</button>
+      <p class="pix-instrucoes">
+        Envie o PIX com o valor desejado para a chave acima e, após o pagamento, confirme com os noivos.
+      </p>
+      <button id="fecharPixModal">Fechar</button>
+      </div>
     </div>
 
-    <p class="pix-instrucoes">
-      Envie o PIX para a chave acima e, após o pagamento, confirme com os noivos.
-    </p>
+  </header>
 
-    <button id="confirmarPresente">Confirmar que enviei o PIX</button>
+  <h1 class="titulo">Chá de Casa Nova Kaio e Thai</h1>
+  <div class="descricao">
+    <p class="descricao-texto">Chegou a nossa tão sonhada hora de juntar os panos! 💍</p>
+    <p class="descricao-texto">Estamos muito felizes em compartilhar essa nova fase — o início da nossa vida juntos!</p>
+    <p class="descricao-texto">Aos amigos e familiares que desejam contribuir com esse grande passo da nossa história,
+      abaixo está a nossa lista de presentes.</p>
+    <p class="descricao-texto">Caso prefiram presentear de outra forma, é só clicar em “Enviar PIX” no canto superior
+      esquerdo.</p>
+    <p class="descricao-texto">Com carinho, Os noivos agradecem! ❤️</p>
   </div>
-</div>
 
-    <script src="./script/getDados.js" type="module"></script>
+
+
+  <section class="lista-itens" id="lista-itens"></section>
+
+  <!-- Modal PIX -->
+  <div id="pixModal" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+
+      <h2 id="pixItemNome"></h2>
+      <p>Valor: R$ <b id="pixValor"></b></p>
+      <p>Chave PIX:</p>
+
+      <div class="pix-chave-container">
+        <input type="text" id="pixChave" value="8b39cd86-9019-46ac-ab52-5cca6a6169e7" readonly>
+        <button id="copiarPix">Copiar</button>
+      </div>
+
+      <p class="pix-instrucoes">
+        Envie o PIX para a chave acima e, após o pagamento, confirme com os noivos.
+      </p>
+
+      <button id="confirmarPresente">Confirmar que enviei o PIX</button>
+    </div>
+  </div>
+
+  <footer class="rodape">
+    <h2 class="rodape-titulo">Desenvolvido por Kaio Prado</h2>
+  </footer>
+
+  <script src="./script/getDados.js" type="module"></script>
 </body>
+
 </html>
-
-
