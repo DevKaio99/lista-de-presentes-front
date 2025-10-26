@@ -108,6 +108,9 @@ function presentear(item) {
       });
       alert("Presente registrado! Obrigado!");
       modal.style.display = "none";
+      setTimeout(() => {
+        location.reload();
+      }, 300);
     } catch (err) {
       console.error(err);
       alert("Erro ao registrar presente.");
@@ -119,7 +122,10 @@ function presentear(item) {
   window.onclick = (event) => {
     if (event.target === modal) modal.style.display = "none";
   };
+
 }
+
+
 
 
 
