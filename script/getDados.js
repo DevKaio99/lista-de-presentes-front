@@ -97,7 +97,7 @@ function presentear(item) {
       return;
     }
     try {
-      await fetch(`http://localhost:8080/itens/presentear/${idSelecionado}`, {
+      await fetch(`https://lista-de-presentes-backend-latest.onrender.com/itens/presentear/${idSelecionado}`, {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
