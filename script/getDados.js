@@ -1,5 +1,5 @@
 // Endereço backend
-const API_URL = "https://lista-de-presentes-backend-latest.onrender.com";
+const API_URL = "https://lista-de-presentes-backend-latest.onrender.com/itens";
 
 // Seleciona o container onde os itens serão exibidos
 const listaContainer = document.getElementById("lista-itens");
