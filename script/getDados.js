@@ -84,7 +84,7 @@ function presentear(item) {
 
   // Evento do botão Copiar
   document.getElementById("copiarPixPresente").onclick = function () {
-    const chaveInput = document.getElementById("pixChave");
+    const chaveInput = document.getElementById("pixChave2");
     chaveInput.select();
     document.execCommand("copy");
     alert("Chave PIX copiada!");
