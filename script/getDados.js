@@ -83,7 +83,7 @@ function presentear(item) {
   modal.style.display = "block";
 
   // Evento do botão Copiar
-  document.getElementById("copiarPix").onclick = function () {
+  document.getElementById("copiarPixPresente").onclick = function () {
     const chaveInput = document.getElementById("pixChave");
     chaveInput.select();
     document.execCommand("copy");
