@@ -1,9 +1,28 @@
+.capa {
+  height: 400px;
+  width: auto;
+  background-image: url('/img/foto_kt.jpeg');
+  background-repeat: no-repeat; /* Impede que a imagem se repita */
+  background-position: center center; /* Centraliza a imagem */
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  
+}
+
 .titulo {
   font-family: var(--fonte-titulo);
-    font-size: 60px;
-    text-align: center;
-    margin: 2em 0 .5em 0;
-    color: var(--cor-principal);
+  font-size: 50px;
+  text-align: center;
+  margin: 1.7em 0 .5em 0;
+  color: var(--branco);
+  position: absolute;
+  top: 270px;
+
 }
 
 .descricao {
@@ -178,9 +197,14 @@ button {
 
 
 @media screen and (min-width: 1024px){
+
+  .capa{
+  height: 700px;
+  }
+  
   .titulo {
-    font-size: 75px;
-    margin-bottom: 1em;
+    font-size: 100px;
+    top: 350px;
   }
 
   .descricao {
@@ -190,9 +214,18 @@ button {
 }
 
 @media screen and (min-width: 1728px) {
+
+    .capa{
+  height: 600px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 900px;
+  border-radius: 30%;
+  }
     .titulo {
-    font-size: 75px;
-    margin-bottom: 1em;
+    font-size: 90px;
+    position: absolute;
+    top: 290px;
   }
 
   .descricao {
